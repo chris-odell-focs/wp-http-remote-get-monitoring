@@ -8,14 +8,14 @@ when getting data from a remote resource.
 
 $monitored_http = new \Focs_Monitored_WP_HTTP();
 $downloaded_file = $monitored_http->get( 
-    $remote_file_path, 
-    array( $this, 'progress_monitor' ), //the callback function to display or log the progress
-    array( 
-        'timeout' => 360,
-        'filename' => $local_archive_path, //the path to save to on the local machine
-        'return_content' => false, //if set to true the content from the remote file will be passed to the calling module, rather than saving the file
-        'stream' => true, //if to steam to a file. See https://developer.wordpress.org/reference/classes/wp_http/ for more detail
-    ) 
+   $remote_file_path, 
+   array( $this, 'progress_monitor' ), //the callback function to display or log the progress
+      array( 
+         'timeout' => 360,
+         'filename' => $local_archive_path, //the path to save to on the local machine
+         'return_content' => false, //if set to true the content from the remote file will be passed to the calling module, rather than saving the file
+         'stream' => true, //if to steam to a file. See https://developer.wordpress.org/reference/classes/wp_http/ for more detail
+   ) 
 );
 
 ## Motivation
