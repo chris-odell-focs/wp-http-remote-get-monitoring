@@ -43,3 +43,4 @@ https://wordpress.org/support/users/chrisodell/
 ## License
 
 GPLv2 or later
+
